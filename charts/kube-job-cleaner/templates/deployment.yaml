@@ -19,6 +19,8 @@ spec:
             - /kube-job-cleaner
           args:
             - --enable-leader-election
+            - --delete-after
+            - "{{ .Values.ttlSecondsAfterFinished }}"
           image: {{ .Values.image }}
           name: kube-job-cleaner
           imagePullPolicy: Always

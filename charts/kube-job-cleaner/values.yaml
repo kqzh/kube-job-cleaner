@@ -5,4 +5,4 @@ elastic:
 
 image: kqzh/kube-job-cleaner:cloud
 
-ttlSecondsAfterFinished: 100
+ttlSecondsAfterFinished: 1800 # 30min
