@@ -1,0 +1,15 @@
+apiVersion: v2
+appVersion: 0.1.0
+name: kube-job-cleaner
+description: Kube-Job-Cleaner Helm chart for Kubernetes
+home: https://github.com/kqzh
+keywords:
+  - kubernetes
+  - controller
+  - job
+  - elasticseaerch
+sources:
+  - https://github.com/kqzh/kube-job-cleaner
+version: 0.1.0
+
+

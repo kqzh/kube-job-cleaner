@@ -1,0 +1,8 @@
+elastic:
+  cloudID:
+  username:
+  password:
+
+image: kqzh/kube-job-cleaner:cloud
+
+ttlSecondsAfterFinished: 100

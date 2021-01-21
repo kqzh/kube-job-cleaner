@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-job-cleaner
+  namespace: kube-system
+spec:
+  selector:
+    matchLabels:
+      control-plane: kube-job-cleaner
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        control-plane: kube-job-cleaner
+    spec:
+      serviceAccountName: kube-job-cleaner
+      containers:
+        - command:
+            - /kube-job-cleaner
+          args:
+            - --enable-leader-election
+          image: {{ .Values.image }}
+          name: kube-job-cleaner
+          imagePullPolicy: Always
+          env:
+            - name: ElasticSearchCloudID
+              value: {{ .Values.elastic.cloudID }}
+            - name: ElasticSearchUsername
+              value: {{ .Values.elastic.username }}
+            - name: ElasticSearchPassword
+              value: {{ .Values.elastic.password }}
+      terminationGracePeriodSeconds: 10
