@@ -13,13 +13,5 @@ Some common use-case scenarios:
 | delete-after    | 0       | delete job and pods after specified period |
 | with-configmap  | true    | delete configmaps which mount on job's pod |
 
-Environment used to init Elastic Client:
-
-| env                     | usage                     |
-| ----------------------- | --------------------------|
-| ElasticSearchCloudID    | Login Cloud ElasticSearch |
-| ElasticSearchUsername   | -                         |
-| ElasticSearchPassword   | -                         | 
-
 
 
