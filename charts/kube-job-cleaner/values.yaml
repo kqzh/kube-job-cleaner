@@ -1,7 +1,7 @@
 elastic:
-  cloudID:
-  username:
-  password:
+  cloudID: i-o-optimized-deployment:dXMtZWFzdC0xLmF3cy5mb3VuZC5pbyQzZGY1MWRlODhjODc0NWVmYjQ1NzNiMGY2NGRlMTY1NiQwOTg2MzNhMzg4NWM0ZWExOGRhOWUzYWM2MGI4MTE4NQ==
+  username: elastic
+  password: lA76ROy50z8XBR9iK4RklWMD
 
 image: kqzh/kube-job-cleaner:cloud
 
